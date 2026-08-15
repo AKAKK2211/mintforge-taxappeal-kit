@@ -1,0 +1,34 @@
+:root {
+  --bg:#f7f8fa; --ink:#14181f; --muted:#5c6672; --brand:#0f62fe; --brand2:#00b368;
+  --line:#e3e7ee; --panel:#fff; --gold:#b8860b;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--ink); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; line-height:1.55; }
+a { color:var(--brand); }
+.nav { display:flex; justify-content:space-between; align-items:center; padding:14px 24px; max-width:960px; margin:0 auto; }
+.brand { font-weight:800; }
+.cta { background:var(--brand2); color:#fff; text-decoration:none; padding:13px 26px; border-radius:8px; font-weight:700; display:inline-block; border:none; cursor:pointer; font-size:16px; }
+.cta.small { padding:8px 16px; font-size:14px; }
+.hero { text-align:center; padding:64px 24px 40px; max-width:760px; margin:0 auto; }
+h1 { font-size:38px; line-height:1.15; letter-spacing:-.5px; }
+.sub { color:var(--muted); font-size:17px; margin-top:14px; }
+.hero-cta { margin-top:26px; }
+.panel { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:26px; max-width:860px; margin:22px auto; }
+h2 { font-size:21px; margin-bottom:14px; }
+.hint { color:var(--muted); font-size:13px; font-weight:400; margin-left:8px; }
+.note { color:var(--muted); font-size:13px; margin-top:10px; }
+.calc label { display:block; margin:10px 0 4px; font-size:14px; font-weight:600; }
+.calc input { width:100%; padding:11px; border:1px solid var(--line); border-radius:8px; font-size:15px; margin-top:4px; }
+.calc .cta { margin-top:14px; }
+.calc-out { margin-top:14px; font-size:16px; font-weight:700; color:var(--brand2); }
+.tier { border:2px solid var(--brand2); border-radius:10px; padding:20px; }
+.tier h3 { font-size:18px; }
+.tier .price { font-size:30px; font-weight:800; margin:8px 0; }
+.tier .price small { font-size:13px; color:var(--muted); font-weight:400; }
+.tier ul { list-style:none; font-size:14px; color:var(--muted); margin:10px 0 16px; }
+.tier ul li { padding:3px 0; }
+.tier ul li::before { content:'✓ '; color:var(--brand2); font-weight:700; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+.grid > div { background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:14px; font-size:14px; }
+footer { text-align:center; color:var(--muted); padding:30px 20px; font-size:13px; }
+@media (max-width:640px){ h1{font-size:29px;} }

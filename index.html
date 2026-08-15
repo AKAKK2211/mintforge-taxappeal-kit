@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaxAppeal Kit — Property Tax Appeal Calculator & DIY Kit</title>
+<meta name="description" content="Estimate your property tax savings in 60 seconds. Then appeal it yourself with the TaxAppeal DIY Kit — the playbook, comps worksheet, hearing script and deadline tracker. One-time $49, pay in USDC.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <span class="brand">◈ TaxAppeal Kit</span>
+  <a class="cta small" href="#pricing">Get the kit — $49</a>
+</header>
+
+<section class="hero">
+  <h1>Overpaying property tax?<br>Appeal it yourself. Keep 100% of the savings.</h1>
+  <p class="sub">Appeal services keep ~30% of your first-year savings. Homeowners who appeal their assessment win in the majority of cases when they show up with evidence. The TaxAppeal Kit gives you the exact playbook, worksheets and scripts — one-time $49, no percentage taken.</p>
+  <div class="hero-cta"><a class="cta" href="#calc">Estimate your savings — free</a></div>
+</section>
+
+<section class="panel" id="calc">
+  <h2>Savings calculator <span class="hint">estimates only</span></h2>
+  <div class="calc">
+    <label>Your county's effective property tax rate (%) <input id="rate" type="number" step="0.01" value="1.10" placeholder="e.g. 1.10"></label>
+    <label>Current assessed value ($) <input id="assessed" type="number" step="1000" value="300000" placeholder="e.g. 300000"></label>
+    <label>Estimated market value from comps ($) <input id="market" type="number" step="1000" value="260000" placeholder="e.g. 260000"></label>
+    <button class="cta" id="calcBtn">Calculate</button>
+    <div id="calcOut" class="calc-out"></div>
+    <p class="note">The calculator assumes a successful reduction to market value — actual outcomes vary by county and evidence quality. This is an estimate, not legal or tax advice.</p>
+  </div>
+</section>
+
+<section class="panel" id="pricing">
+  <h2>The DIY Kit — $49 one-time</h2>
+  <div class="tier featured">
+    <h3>TaxAppeal DIY Kit</h3>
+    <div class="price">$49 <small>one-time · pay in USDC</small></div>
+    <ul>
+      <li>Step-by-step appeal playbook (protest → hearing)</li>
+      <li>Comparable-sales worksheet (spreadsheet)</li>
+      <li>Hearing script + talking points</li>
+      <li>Sample protest letter (editable)</li>
+      <li>Deadline & document tracker + official resource links</li>
+      <li>Free lifetime updates as state processes change</li>
+    </ul>
+    <a class="cta" href="checkout.html">Buy with USDC</a>
+  </div>
+  <p class="note">Typical homeowners who appeal save $300–$1,500+/year. The kit costs less than one month of the savings — and you keep everything.</p>
+</section>
+
+<section class="panel">
+  <h2>FAQ</h2>
+  <div class="grid">
+    <div><b>Do I need a lawyer?</b><br>No. Most counties allow homeowners to appeal directly and represent themselves. The kit is a framework — always confirm deadlines and forms with your county assessor.</div>
+    <div><b>How fast do I get it?</b><br>Instant delivery after your USDC payment is verified on-chain — typically minutes.</div>
+    <div><b>What if I lose the appeal?</b><br>You're out the $49, not 30% of savings forever. And you can appeal again next year with better evidence.</div>
+    <div><b>Is this legal/tax advice?</b><br>No — it's a self-help framework. Rules vary by state and county; the kit directs you to official sources.</div>
+  </div>
+</section>
+
+<footer>
+  <p class="fine">TaxAppeal Kit · one-time digital product · receive-only USDC payments · no subscription</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
